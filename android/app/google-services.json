@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "441491973614",
+    "project_id": "drugstore-flutter",
+    "storage_bucket": "drugstore-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441491973614:android:825bfebd86b45350e9daff",
+        "android_client_info": {
+          "package_name": "xyz.naeemcse.drugstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUrLYKZn5yjLIpV9rIRm24LBLFq4GoNdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
