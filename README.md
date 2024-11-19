@@ -53,7 +53,26 @@ The app leverages **Flutter** for cross-platform compatibility, **Firebase** for
    - Update or delete existing medicines.
 3. **Data Sync**: All changes are synchronized with Firebase in real-time.
 
----
+--lib/
+├── constants.dart               # Application-wide constants
+├── models/
+│   ├── medicine.dart            # Data model for medicines
+│   └── cart_item.dart           # Data model for cart items
+├── screens/
+│   ├── home_screen.dart         # Home page for browsing medicines
+│   ├── search_screen.dart       # Search functionality
+│   ├── admin_login_screen.dart  # Admin login page
+│   ├── admin_dashboard.dart     # Admin control panel
+│   └── cart_screen.dart         # Cart management screen
+├── services/
+│   ├── firebase_service.dart    # Firebase CRUD operations
+│   └── hive_service.dart        # Local storage management with Hive
+├── widgets/
+│   ├── medicine_card.dart       # Reusable widget for displaying medicines
+│   ├── search_bar.dart          # Custom widget for search functionality
+│   └── cart_item_widget.dart    # Widget for displaying cart items
+├── main.dart                    # App entry point
+-
 
 
 
