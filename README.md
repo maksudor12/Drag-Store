@@ -80,6 +80,34 @@ The app's architecture ensures high scalability, performance, and maintainabilit
 ## **Project Structure**
 
 The project adheres to clean architecture principles, ensuring scalability and readability:
+graph TD
+    A[Start Application] --> B[Initialize Hive and Firebase]
+    B --> C[Load Home Page]
+    C --> D[Search for Medicines]
+    C --> E[Add Medicines to Cart]
+    E --> F[View and Manage Cart]
+    F --> G[Confirm Order]
+    G --> H[Store Order Details in Firebase]
+    C --> I[Admin Login]
+    I --> J[Admin Dashboard]
+    J --> K[Add/Edit/Delete Medicines]
+    G --> L[Order Confirmation for User]
+Firebase Database Structure
+Firestore Database
+├── medicines
+│   ├── medicine_id_1
+│   │   ├── name: "Paracetamol"
+│   │   ├── price: 50
+│   │   ├── unit: "Tablets"
+│   └── medicine_id_2
+│       ├── name: "Ibuprofen"
+│       ├── price: 100
+│       ├── unit: "Tablets"
+├── orders
+│   ├── order_id_1
+│   │   ├── user_id: "user_123"
+│   │   ├── cart: [{medicine_id: "medicine_id_1", quantity: 2}, ...]
+│   └── order_id_2
 
 
 ---
