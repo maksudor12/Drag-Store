@@ -6,16 +6,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-/*
-flutter run -d web-server --web-port=9000
-Developed By
-Name: Mirza Mojahid
-Github: github.com/mirzamojahid
-Email: mojahid@shohayok.com
-Whatsapp: +8801872945299
-Learn more: https://shohayok.com
-*/
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -24,12 +14,12 @@ void main() async {
 
   if (kIsWeb || Platform.isAndroid || Platform.isWindows) {
     await Firebase.initializeApp(
-        options: FirebaseOptions(
-            apiKey: "AIzaSyAUrLYKZn5yjLIpV9rIRm24LBLFq4GoNdA",
-            appId: "1:441491973614:android:825bfebd86b45350e9daff",
-            messagingSenderId: "441491973614",
-            storageBucket: 'drugstore-flutter.firebasestorage.app',
-            projectId: "drugstore-flutter"));
+        options: const FirebaseOptions(
+          apiKey: 'AIzaSyA2dMIA7QDwkgtVaAvCdmHyvzzdrKFWvPM',
+          appId: '1:656806131837:android:b29c32fb14c46d88b4d914',
+          messagingSenderId: '656806131837',
+          projectId: 'chatapp-12268',
+          storageBucket: 'chatapp-12268.appspot.com',),);
   }
   runApp(const MyApp());
 }
@@ -46,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MedicinesScreen(),
+      home: const MedicinesScreen(),
     );
   }
 }

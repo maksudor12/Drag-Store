@@ -56,16 +56,16 @@ class _MedicinesScreenState extends State<MedicinesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.zero,
         ),
         child: Column(
           children: [
             Container(
               height: 140,
-              decoration: BoxDecoration(color: Colors.green),
+              decoration: const BoxDecoration(color: Colors.green),
               width: double.maxFinite,
-              child: Center(
+              child: const Center(
                 child: Text(
                   Constants.app_name,
                   style: TextStyle(
@@ -79,7 +79,7 @@ class _MedicinesScreenState extends State<MedicinesScreen> {
               onTap: () {
                 Navigator.pop(context); // Close the drawer
               },
-              title: Text(
+              title: const Text(
                 "Home",
                 style: TextStyle(color: Colors.black),
               ),
@@ -89,7 +89,7 @@ class _MedicinesScreenState extends State<MedicinesScreen> {
                 if (await _auth.currentUser != null) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AdminPanel()),
+                    MaterialPageRoute(builder: (context) => const AdminPanel()),
                   );
                 } else {
                   Navigator.push(context, MaterialPageRoute(
@@ -99,7 +99,7 @@ class _MedicinesScreenState extends State<MedicinesScreen> {
                   ));
                 }
               },
-              title: Text(
+              title: const Text(
                 "Admin panel",
                 style: TextStyle(color: Colors.black),
               ),
@@ -108,7 +108,7 @@ class _MedicinesScreenState extends State<MedicinesScreen> {
               onTap: () {
                 exit(0);
               },
-              title: Text(
+              title: const Text(
                 "Exit",
                 style: TextStyle(color: Colors.red),
               ),
@@ -127,7 +127,7 @@ class _MedicinesScreenState extends State<MedicinesScreen> {
                   },
                 ));
               },
-              icon: Icon(Icons.shopping_cart)),
+              icon: const Icon(Icons.shopping_cart)),
         ],
       ),
       body: Padding(
