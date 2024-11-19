@@ -52,21 +52,7 @@ The app leverages **Flutter** for cross-platform compatibility, **Firebase** for
    - Add new medicines with details (name, price, unit).
    - Update or delete existing medicines.
 3. **Data Sync**: All changes are synchronized with Firebase in real-time.
-Firestore Database
-├── medicines
-│   ├── medicine_id_1
-│   │   ├── name: "Paracetamol"
-│   │   ├── price: 50
-│   │   ├── unit: "Tablets"
-│   └── medicine_id_2
-│       ├── name: "Ibuprofen"
-│       ├── price: 100
-│       ├── unit: "Tablets"
-├── orders
-│   ├── order_id_1
-│   │   ├── user_id: "user_123"
-│   │   ├── cart: [{medicine_id: "medicine_id_1", quantity: 2}, ...]
-│   └── order_id_2
+
 
 
 
